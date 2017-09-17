@@ -1,6 +1,6 @@
 (function() {
   var cheerio;
-  if (typeof window === 'undefined') {
+  if (typeof window === 'undefined' || typeof document === 'undefined') {
     // node
     module.exports = splitHtml;
     cheerio = require('cheerio-without-node-native');
