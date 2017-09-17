@@ -3,7 +3,7 @@
   if (typeof window === 'undefined') {
     // node
     module.exports = splitHtml;
-    cheerio = require('cheerio');
+    cheerio = require('cheerio-without-node-native');
   } else {
     window.splitHtml = splitHtml;
     // In the browser, use actual jQuery in place of Cheerio.
